@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: bisque;
+    }
+    p:hover {
+        color: aquamarine;
+    }
+    div p:nth-child(2) {
+        color: aqua;
+    }
+    div p:nth-child(1)::first-letter {
+        color: black;
+        font-style: italic;
+    }
+    p:hover::before {
+        content: "🦁";
+    }
+    p::after {
+        content: "🦁"
+    }
+    ::placeholder {
+        color: rgb(166, 219, 186);
+    }
+    button {
+        color: darkorange;
+    }
+
+    button:active {
+        color: rgb(131, 72, 1);
+    }
+    input ~ p {
+        color: black;
+    }
+
+
+    input:in-range + p::after {
+        content: "Mayor de edad";
+    }
+
+    input:out-of-range + p::after {
+        content: "Menor de edad";
+    }
+</style>
+<body>
+    <p> Hola </p>
+    <div>
+        <p>Soy</p>
+        <p>David</p>
+        <p>Fuentes</p>
+    </div>
+    <input type="Name" placeholder="Whats your name?">
+    <button>Click here</button>
+    <div>
+        <label for="age">Te dire si eres mayor de edad</label>
+        <input type="number" name="age" id="age"
+        min="18" max="100">
+        <p>Eres:</p>
+    </div>
+</body>
+</html>
