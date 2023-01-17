@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background-color: rgb(34, 34, 34);
+            border-radius: 20px;
+            overflow: hidden;
+            position: absolute;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 35%;
+        }
+
+        .card p { 
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 0.5;
+            position: relative;
+            top: -285px;
+        }
+
+        .border-profile { 
+            width: 105px;
+            height: 105px;
+            background: rgb(226, 226, 226);
+            border-radius: 50%;
+            position: relative;
+            left: 148.5px;
+            bottom: 52px;
+        }
+
+        .profile-image {
+            position: relative;
+            width: 100px;
+            height: 250px;
+            left: 155.5px;
+            bottom: 155px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            width: 100%;
+            height: 10%;
+            grid-template-columns: 2fr 2fr;
+            position: relative;
+            top: 100px;
+            z-index: 3;
+        }
+
+        .container p:nth-child(1) {
+            left: 20px;
+        
+        }
+
+        .container p:nth-child(2) {
+            left: 0px;
+        
+        }
+
+        .gmail img {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            top: 453px;
+            left: 50px;
+        }
+        .location img {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            top: 453px;
+            right: 150px;
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(92, 216, 224);
+            position: relative;
+            bottom: 150px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+          
+        }
+
+        h1 { 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            top: 18px;
+            margin: 0;
+            color: rgb(34, 34, 34);
+            font-size: medium;
+            text-align: center
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img id="programar" src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Programar">
+            <div class="border-profile"></div>
+            <div class="profile-image">
+                <img src="logosinfondo.png" alt="profile-image">
+            </div>
+
+            <p><strong> David Fuentes </strong></p>
+            <p>Frontend Developer</p>
+
+            <div class="container">
+                <p>Colombia</p>
+                <p>Send Email</p> 
+            </div>
+
+        <nav> 
+           <h1>Follow</h1>
+        </nav>
+        
+            
+        </div>
+
+        <div class="gmail">
+            <img src="gmail.png" alt="gmail">
+         </div>
+
+        <div class="location">
+             <img src="pngwing.com.png" alt="location">
+        </div>
+
+        
+
+    </section>
+    
+</body>
+</html>
